@@ -13,7 +13,8 @@ app.use(express.json());
 connection();
 app.use(cp());
 app.use(cors({
-    origin:["http://localhost:3001"],
+    // Access-Control-Allow-Origin:*,
+    origin:"*",
     methods:["GET","PUT","POST","DELETE"],
     credentials:true,//to make cookie accessible on frontend also bcz this allows cokkie accessible on diff domains.
 }));
