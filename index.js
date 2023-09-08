@@ -14,7 +14,7 @@ connection();
 app.use(cp());
 app.use(cors({
     // Access-Control-Allow-Origin:*,
-    origin:"https://localhost:3001",
+    origin:"http://localhost:3001",
     methods:["GET","PUT","POST","DELETE"],
     credentials:true,//to make cookie accessible on frontend also bcz this allows cokkie accessible on diff domains.
 }));
